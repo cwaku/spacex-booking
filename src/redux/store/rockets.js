@@ -29,4 +29,3 @@ const rocketsSlice = createSlice({
 export default rocketsSlice.reducer;
 
 //Actions
-export const {

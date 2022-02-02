@@ -8,7 +8,7 @@ const RocketsList = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchRockets());
-  },);
+  }, []);
 
   return rockets.map(rocket => (
     <RocketItem key={rocket.id} rocket={rocket} />

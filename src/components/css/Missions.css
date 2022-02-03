@@ -1,0 +1,84 @@
+#missions_table {
+  width: 100%;
+  border: 1px solid rgba(192, 192, 192, .5);
+  border-spacing:none;
+  border-collapse: collapse;
+}
+
+#missions_table tr {
+  width: 100%;
+  transition: 0.6s;
+}
+
+#missions_table thead th {
+  border-bottom: 2px solid #ccc;
+  border-spacing: 0;
+}
+
+#missions_table tr:hover{
+  background: #e6e6e6;
+  border-bottom: 2px #e6e6e6;;
+}
+
+#missions_table tbody tr td {
+  color: #444;
+  line-height: 23px;
+  padding: 20px 0;
+  border-bottom: 2px solid #e6e6e6;
+  margin:  10px 20px;
+}
+
+#missions_table tbody tr th {
+  white-space: nowrap;
+  padding: 0 50px;
+  border-bottom: 2px solid #e6e6e6;
+  vertical-align: top;
+}
+
+#missions_table tbody tr td {
+  
+}
+
+#missions_table tbody tr td button{
+  border: none;
+  display:block;
+  padding: 4px;
+  white-space:nowrap;
+  background: #fff;
+  width: 100px;
+  margin: 0 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.6s;
+}
+
+#missions_table tbody tr td button.join-btn {
+  color: #555;
+  border: 1px solid #555;
+}
+
+#missions_table tbody tr td button.leave-btn {
+  color: #e9251ad1;
+  border: 1px solid #ef2c0b59;
+}
+
+#missions_table tbody tr td button:hover {
+  box-shadow: 0 1px 8px 0;
+}
+
+#missions_table tbody tr td span {
+  padding: 2px;
+  width: 120px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 14px;
+  
+}
+
+#missions_table tbody tr td span.not-member {
+  background: #666;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 8px;
+}

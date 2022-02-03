@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import Apis from './Apis';
+import { useSelector, useDispatch } from "react-redux";
 import './css/Missions.css';
 import Mission from './Missions/Mission';
+import fetchMissions from './Missions/FetchMissions';
 
 export default function Missions() {
-  const [missions, displayMissions] = useState([]);
-  useEffect(prev => {
-    axios.get(Apis.missions).then((res) => {
-      displayMissions(res.data.map(((mission) => <Mission key={mission.mission_id} status='not-member' data={mission}/>)));
-    }).catch((error) => {
-      console.warn(error);
-    })
+  const missions = useSelector(state => state.missions.missions);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchMissions());
   }, [])
   return (
     <>
@@ -25,7 +22,9 @@ export default function Missions() {
           </tr>
         </thead>
         <tbody>
-          {missions}
+          {
+            missions.map(((mission) => <Mission key={mission.mission_id} status={missions.find((item) => item.mission_id === mission.mission_id).status} data={mission}/>))
+          }
         </tbody>
       </table>
     </>

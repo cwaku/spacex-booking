@@ -23,13 +23,14 @@ const rocketsSlice = createSlice({
     }
     //reducer for reserving a rocket
     , reserveRocket: (state, action) => {
-      const rocket = state.rockets.find(rocket => rocket.id === action.payload);
-      rocket.reserved = true;
+      const rocket = state.rockets.map(rocket => rocket.rocket_id === action.payload ? ({...rocket, reserved: true }) : rocket);
+      state.rockets = rocket;
+      console.log(state.rockets);
     }
     //reducer for canceling a reservation
     , cancelReservation: (state, action) => {
-      const rocket = state.rockets.find(rocket => rocket.id === action.payload);
-      rocket.reserved = false;
+      const rocket = state.rockets.map(rocket => rocket.rocket_id === action.payload ? ({...rocket, reserved: false }) : rocket);
+      state.rockets = rocket;
     }
   }
 });

@@ -73,12 +73,16 @@
   white-space: nowrap;
   font-weight: 500;
   font-size: 14px;
+  border-radius: 4px;
+  padding: 5px 10px;
   
+}
+#missions_table tbody tr td span.member {
+  color: #fff;
+  background: #0479FA;
 }
 
 #missions_table tbody tr td span.not-member {
   background: #666;
   color: #fff;
-  border-radius: 4px;
-  padding: 2px 8px;
 }

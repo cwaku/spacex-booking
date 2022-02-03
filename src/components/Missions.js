@@ -8,7 +8,7 @@ export default function Missions() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchMissions());  
-  }, [])
+  },[])
   return (
     <>
       <table id="missions_table">

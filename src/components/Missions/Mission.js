@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { joinMission, leaveMission } from '../../redux/store/missions';
 export default function Mission(props) {
   const dispatch = useDispatch();

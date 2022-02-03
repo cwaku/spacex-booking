@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-
+import Save from '../../components/Missions/SaveMissions';
 // slice
 const missionsSlice = createSlice({
   name: 'missions',
@@ -13,12 +13,17 @@ const missionsSlice = createSlice({
     , missionsSuccess: (state, action) => {
       state.missions = action.payload;
       state.loading = false;
+      Save(action.payload);
     }
     , joinMission: (state, action) => {
-        state.missions = state.missions.map(mission => mission.mission_id === action.payload ? ({...mission, status:'booked'}) : mission)
+      const newState = state.missions.map(mission => mission.mission_id === action.payload ? ({...mission, status:'booked'}) : mission)
+      state.missions = newState;
+      Save(newState);
     }
     , leaveMission: (state, action) => {
-      state.missions = state.missions.map(mission => mission.mission_id === action.payload ? ({...mission, status:''}) : mission)
+      const newState = state.missions.map(mission => mission.mission_id === action.payload ? ({...mission, status:''}) : mission)
+      state.missions = newState;
+      Save(newState);
     }
   }
 });

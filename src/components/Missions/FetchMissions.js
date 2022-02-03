@@ -4,8 +4,13 @@ import Apis from "../Apis";
 
 const fetchMissions = () => async (dispatch) => {
   try {
-    const missions = await axios.get(Apis.missions);
-    dispatch(missionsSuccess(missions.data.map((mission) => ({...mission, status:''}))));
+    const savedData = JSON.parse(localStorage.getItem('missions'));
+    if(savedData && savedData !== null){
+      dispatch(missionsSuccess(savedData));
+    }else{
+      const missions = await axios.get(Apis.missions);
+      dispatch(missionsSuccess(missions.data.map((mission) => ({...mission, status:''}))));
+    }
   } catch (error) {
     dispatch(missionsError(error.message));
   }

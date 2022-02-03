@@ -15,12 +15,10 @@ const missionsSlice = createSlice({
       state.loading = false;
     }
     , joinMission: (state, action) => {
-      const Mission = state.missions.find(Mission => Mission.id === action.payload);
-      Mission.status = 'booked';
+        state.missions = state.missions.map(mission => mission.mission_id === action.payload ? ({...mission, status:'booked'}) : mission)
     }
-    , cancelReservation: (state, action) => {
-      const Mission = state.missions.find(Mission => Mission.id === action.payload);
-      Mission.status = '';
+    , leaveMission: (state, action) => {
+      state.missions = state.missions.map(mission => mission.mission_id === action.payload ? ({...mission, status:''}) : mission)
     }
   }
 });
@@ -28,4 +26,4 @@ const missionsSlice = createSlice({
 export default missionsSlice.reducer;
 
 //Actions
-export const { missionsSuccess, joinMission, cancelReservation , missionsError } = missionsSlice.actions;
+export const { missionsSuccess, joinMission, leaveMission , missionsError } = missionsSlice.actions;

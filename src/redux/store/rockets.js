@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
+axios.defaults.baseURL = 'https://api.spacexdata.com/v3/';
 
 // slice
 const rocketsSlice = createSlice({

@@ -6,20 +6,6 @@ import Mission from './Missions/Mission';
 
 export default function Missions() {
   const [missions, displayMissions] = useState([]);
-  const missionsData = [
-    {
-      id: 1,
-      title: 'To the Moon',
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe facere quaerat odit ipsam culpa ducimus, neque nesciunt autem in mollitia, accusantium ex consectetur? Eligendi ullam vitae molestias? Ex, soluta omnis?',
-      status: 'member',
-    },
-    {
-      id: 2,
-      title: 'To the Moon 2',
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe facere quaerat odit ipsam culpa ducimus, neque nesciunt autem in mollitia, accusantium ex consectetur? Eligendi ullam vitae molestias? Ex, soluta omnis?',
-      status: 'not-member',
-    },
-  ];
   useEffect(prev => {
     axios.get(Apis.missions).then((res) => {
       displayMissions(res.data.map(((mission) => <Mission key={mission.mission_id} status='not-member' data={mission}/>)));

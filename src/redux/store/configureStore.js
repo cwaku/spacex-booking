@@ -5,7 +5,7 @@ import rockets from './rockets'
 import missions from './missions'
 import logger from 'redux-logger';
 
-const reducer = combineReducers({
+export const reducer = combineReducers({
   // reducers go here
   rockets,
   missions,

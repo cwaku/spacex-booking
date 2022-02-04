@@ -7,14 +7,9 @@ import Rockets from './components/rockets/Rockets';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchRockets } from './redux/store/rockets';
-import fetchMissions from './components/Missions/FetchMissions';
 
 function App() {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchMissions());  
-  }, [])
-
   useEffect(() => {
     dispatch(fetchRockets());
   }, []);

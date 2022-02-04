@@ -1,14 +1,9 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import './css/Missions.css';
 import Mission from './Missions/Mission';
-import fetchMissions from './Missions/FetchMissions';
 export default function Missions() {
   const missions = useSelector(state => state.missions.missions);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchMissions());  
-  }, [])
+  
   return (
     <>
       <table id="missions_table">

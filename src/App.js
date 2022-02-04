@@ -4,7 +4,20 @@ import Navbar from './components/Navbar';
 import Missions from './components/Missions';
 import Profile from './components/Profile';
 import Rockets from './components/rockets/Rockets';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchRockets } from './redux/store/rockets';
+import fetchMissions from './components/Missions/FetchMissions';
+
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchMissions());  
+  }, [])
+
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, []);
   return (
     <Router>
       <Navbar />

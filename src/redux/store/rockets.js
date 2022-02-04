@@ -18,19 +18,17 @@ const rocketsSlice = createSlice({
     }
     //reducer for success
     , rocketsSuccess: (state, action) => {
-      state.rockets = action.payload;
-      state.loading = false;
+      return {...state, rockets: action.payload,};
     }
     //reducer for reserving a rocket
     , reserveRocket: (state, action) => {
-      const rocket = state.rockets.map(rocket => rocket.rocket_id === action.payload ? ({...rocket, reserved: true }) : rocket);
-      state.rockets = rocket;
-      console.log(state.rockets);
+      const rocket = state.rockets.find(rocket => rocket.rocket_id === action.payload);
+      rocket.reserved = true;      
     }
     //reducer for canceling a reservation
     , cancelReservation: (state, action) => {
-      const rocket = state.rockets.map(rocket => rocket.rocket_id === action.payload ? ({...rocket, reserved: false }) : rocket);
-      state.rockets = rocket;
+      const rocket = state.rockets.find(rocket => rocket.rocket_id === action.payload);
+      rocket.reserved = false;  
     }
   }
 });

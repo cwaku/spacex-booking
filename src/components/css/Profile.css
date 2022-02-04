@@ -20,7 +20,8 @@
   padding: 25px 10px;
   color: #333;
 }
-.profile section ul li:last-child{
+
+.profile section ul li:last-child {
   border-bottom: none;
 }
 

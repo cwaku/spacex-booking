@@ -20,7 +20,7 @@
 
 #### Click on the badge below to see the deployed version of the app:
 
-[![](https://img.shields.io/badge/Deployed-Heroku-blueviolet)]()
+[![](https://img.shields.io/badge/Deployed-Heroku-blueviolet)](https://spacex-booking.herokuapp.com/)
 
 ## Getting Started
 

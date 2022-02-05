@@ -81,6 +81,12 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - LinkedIn: [Ricky Mormor](www.linkedin.com/in/ricky-mormor)
 - Instagram: [@rickymormor](https://instagram.com/rickymormor)
 - Twitter: [@rickymormor](https://twitter.com/rickymormor)
+
+👤 **Blessed Jason Mwanza**
+
+- GitHub: [@blessedjasonmwanza](https://github.com/blessedjasonmwanza)
+- Twitter: [@mwanzabj](https://twitter.com/mwanzabj)
+- LinkedIn: [Blessedjasonmwanza](https://linkedin.com/in/blessedjasonmwanza)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

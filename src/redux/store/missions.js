@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { createSlice } from '@reduxjs/toolkit';
 import Save from '../../components/Missions/SaveMissions';
 // slice
@@ -9,26 +10,28 @@ const missionsSlice = createSlice({
   reducers: {
     missionsError: (state, action) => {
       state.error = action.payload;
-    }
-    , missionsSuccess: (state, action) => {
+    },
+    missionsSuccess: (state, action) => {
       state.missions = action.payload;
       state.loading = false;
       Save(action.payload);
-    }
-    , joinMission: (state, action) => {
-      const newState = state.missions.map(mission => mission.mission_id === action.payload ? ({...mission, status:'booked'}) : mission)
+    },
+    joinMission: (state, action) => {
+      const newState = state.missions.map((mission) => (mission.mission_id === action.payload ? ({ ...mission, status: 'booked' }) : mission));
       state.missions = newState;
       Save(newState);
-    }
-    , leaveMission: (state, action) => {
-      const newState = state.missions.map(mission => mission.mission_id === action.payload ? ({...mission, status:''}) : mission)
+    },
+    leaveMission: (state, action) => {
+      const newState = state.missions.map((mission) => (mission.mission_id === action.payload ? ({ ...mission, status: '' }) : mission));
       state.missions = newState;
       Save(newState);
-    }
-  }
+    },
+  },
 });
 
 export default missionsSlice.reducer;
 
-//Actions
-export const { missionsSuccess, joinMission, leaveMission , missionsError } = missionsSlice.actions;
+// Actions
+export const {
+  missionsSuccess, joinMission, leaveMission, missionsError,
+} = missionsSlice.actions;

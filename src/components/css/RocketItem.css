@@ -41,14 +41,13 @@
   cursor: pointer;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .rocket-item__reserve-btn {
   padding: 20px;
   background-color: #007bff;
   border-radius: 5px;
-  border: none;
   color: #fff;
   font-size: 20px;
   font-weight: bold;

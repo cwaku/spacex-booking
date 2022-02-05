@@ -1,6 +1,44 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Space Travelers' Hub
+
+> Working with the real live data from the SpaceX API. The application allows users to book rockets and join selected space missions. This web application is for a company that provides commercial and scientific space travel services. 
+
+
+
+![screenshot](./screenshot.png)
+![screenshot](./screenshot1.png)
+
+
+## Built With
+
+- JavaScript
+- React
+- Redux
+
+## Deployed On
+
+#### Click on the badge below to see the deployed version of the app:
+
+[![](https://img.shields.io/badge/Deployed-Heroku-blueviolet)](https://spacex-booking.herokuapp.com/)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- some knowledge on `npm` , webpack, JavaScript(ES6) and React
+- [Node.js](https://nodejs.org/en/)
+- Web browser
+- Code Editor
+### Setup
+
+- Clone repository using this command in terminal ` git clone https://github.com/cwaku/spacex-booking.git`
+- Change directory to the cloned repository `cd spacex-booking`
+- Install dependencies using `npm install`
+- run `npm start`
+
 
 ## Available Scripts
 
@@ -17,8 +55,6 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -26,8 +62,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -39,32 +73,30 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Ricky Mormor**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@cwaku](https://github.com/cwaku)
+- LinkedIn: [Ricky Mormor](www.linkedin.com/in/ricky-mormor)
+- Instagram: [@rickymormor](https://instagram.com/rickymormor)
+- Twitter: [@rickymormor](https://twitter.com/rickymormor)
 
-### Code Splitting
+👤 **Blessed Jason Mwanza**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [@blessedjasonmwanza](https://github.com/blessedjasonmwanza)
+- Twitter: [@mwanzabj](https://twitter.com/mwanzabj)
+- LinkedIn: [Blessedjasonmwanza](https://linkedin.com/in/blessedjasonmwanza)
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Feel free to check the [issues page](https://github.com/cwaku/spacex-booking/issues).
 
-### Making a Progressive Web App
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Give a ⭐️ if you like this project!
 
-### Advanced Configuration
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.

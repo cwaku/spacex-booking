@@ -1,0 +1,30 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.profile section {
+  width: 46%;
+}
+
+.profile section ul {
+  list-style-type: none;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile section ul li {
+  border-bottom: 1px solid #ccc;
+  padding: 25px 10px;
+  color: #333;
+}
+
+.profile section ul li:last-child {
+  border-bottom: none;
+}
+
+.profile section h2 {
+  color: #333;
+}

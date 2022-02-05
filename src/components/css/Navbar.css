@@ -1,0 +1,37 @@
+.main-nav {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(192, 192, 192, 0.5);
+  padding: 10px 0;
+}
+
+.main-nav .brand {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 15px;
+  color: #444;
+}
+
+.main-nav .nav-links {
+  color: #ccc;
+}
+
+.main-nav .nav-links a {
+  color: #0479fa;
+  margin: 0 10px;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: 0.6s;
+}
+
+.main-nav .nav-links a:hover {
+  border-bottom: 1px solid #0479fa;
+}
+
+.main-nav .nav-links a.active {
+  border-bottom: 1px solid #0479fa;
+}

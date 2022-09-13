@@ -1,6 +1,10 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Space Travelers' Hub
+
+## Deployed On
+
+#### Click on the badge below to see the deployed version of the app:
+
+[![](https://img.shields.io/badge/Deployed-Netlify-blueviolet)](https://spontaneous-flan-604469.netlify.app/)
 
 > Working with the real live data from the SpaceX API. The application allows users to book rockets and join selected space missions. This web application is for a company that provides commercial and scientific space travel services. 
 
@@ -15,12 +19,6 @@
 - JavaScript
 - React
 - Redux
-
-## Deployed On
-
-#### Click on the badge below to see the deployed version of the app:
-
-[![](https://img.shields.io/badge/Deployed-Heroku-blueviolet)](https://spacex-booking.herokuapp.com/)
 
 ## Getting Started
 
